@@ -1,0 +1,57 @@
+/* ------------------------------------------------------------ */
+/* IMPORTANT:                                                   */
+/*      - both, C and C++ style comments are supported          */
+/*      - ALWAYS use "." (dot) when entering numbers!           */
+/*        For ex. instead of 20, put 20.0                       */
+/*      - Use same unit system for all values!                  */
+/* ------------------------------------------------------------ */
+
+
+bc:
+(
+  {
+    bcnum:2;
+//    radconv:{alfa=10.0; eps = 0.0;};
+    normal_heat_flux:{flux = 0.03;};
+//     symmetry:{};
+//     isothermal:{temp = 25.0;};
+  },
+  {
+    bcnum:3;
+//    isothermal:{temp = 30.0; };
+//    radconv:{alfa=10.0; eps = 0.0;};
+//    normal_heat_flux:{flux = 0.0;};
+//     symmetry:{};
+    isothermal:{temp = 18.0;};
+  },
+
+   {
+    bcnum:4;
+    //isothermal:{temp = 1.0;};
+    normal_heat_flux:{flux = 0.0;};
+  },
+
+   {
+    bcnum:5;
+    //isothermal:{temp = 1.0;};
+    normal_heat_flux:{flux = 0.0;};
+  },
+   {
+    bcnum:6;
+    //isothermal:{temp = 1.0;};
+    normal_heat_flux:{flux = 0.0;};
+  },
+  {
+    bcnum:7; //top side
+//    radconv:{alfa=10.0; eps = 0.0;};
+    normal_heat_flux:{flux = 0.0;};
+//     symmetry:{};
+  },
+  {
+    bcnum:8;
+//    radconv:{alfa=10.0; eps = 0.0;};
+//     symmetry:{};
+    normal_heat_flux:{flux = 0.0;};
+  }
+);
+

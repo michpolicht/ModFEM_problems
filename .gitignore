@@ -1,0 +1,7 @@
+*.vtu
+*.pvd
+*.partmesh
+go_gdb
+go_gdb_ocl
+*.csv
+gdb_file

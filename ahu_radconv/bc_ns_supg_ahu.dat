@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------ */
+/* IMPORTANT:                                                   */
+/*      - both, C and C++ style comments are supported          */
+/*      - ALWAYS use "." (dot) when entering numbers!           */
+/*        For ex. instead of 20, put 20.0                       */
+/*      - Use same unit system for all values!                  */
+/* ------------------------------------------------------------ */
+
+// pressure_pins:
+// (
+//   {
+//     node_coor = [0.0, 0.0, 0.0];
+//     p = 0.0;
+//   }
+// );
+
+
+// 1 elements - pink
+
+bc:
+(
+  {
+    bcnum:2; // inside - yellow
+    noslip:{};
+  },
+  {
+    bcnum:3; //left - blue
+    velocity:{
+        v = [2.0, 0.0, 0.0];
+    };
+  },
+  {
+    bcnum:4; //front - green
+    noslip:{};
+//      velocity:{
+//        v = [10.0, 0.0, 0.0];
+//      };
+  },
+  {
+    bcnum:5; //right - cyan
+//    noslip:{};
+     outflow:{
+       pressure = 0.0;
+     };
+
+//     velocity:{
+//       v = [0.0, 0.0, 0.0];
+//     };
+  },
+  {
+    bcnum:6; // back - silver
+    noslip:{};
+//      velocity:{
+//        v = [0.0, 10.0, 0.0];
+//      };
+
+  },
+  {
+    bcnum:7; //bottom - orange
+    noslip:{};
+//      velocity:{
+//        v = [0.0, 10.0, 0.0];
+//      };
+
+  },
+  {
+    bcnum:8; // top - purple
+    noslip:{};
+  }
+);
